@@ -7,19 +7,18 @@
 <meta name="description" content="AI assistant box: the ClawBox by OpenClaw. A dedicated NVIDIA AI box with Jetson Orin Nano, 67 TOPS. Your private OpenClaw box for €399.">
 <meta name="keywords" content="ai assistant box, openclaw box, nvidia ai box, ai hardware, ai box, ai hardware device, dedicated ai assistant, openclaw device">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://openclawhardware.dev/">
+<link rel="canonical" href="https://ai-assistant-box.com/">
 <meta property="og:title" content="AI Assistant Box – OpenClaw Box | NVIDIA AI Hardware">
 <meta property="og:description" content="AI assistant box: ClawBox with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
-<meta property="og:url" content="https://openclawhardware.dev/">
+<meta property="og:url" content="https://ai-assistant-box.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="product">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Assistant Box – OpenClaw Box | NVIDIA AI Hardware">
 <meta name="twitter:description" content="AI assistant box: ClawBox with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
 <meta name="twitter:image" content="https://openclawhardware.dev/clawbox-1.webp">
-<meta http-equiv="refresh" content="8;url=https://openclawhardware.dev/">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"AI assistant box: OpenClaw on NVIDIA Jetson Orin Nano 8GB. 67 TOPS, 512GB NVMe.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
+{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"AI assistant box: OpenClaw on NVIDIA Jetson Orin Nano 8GB. 67 TOPS, 512GB NVMe.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://ai-assistant-box.com/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -47,8 +46,41 @@ body{font-family:'Sora',sans-serif;background:#18181b;color:#fafafa;min-height:1
 .cta h2{color:#fafafa;font-size:1.3rem;margin-bottom:20px}
 .cta a{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#18181b;text-decoration:none;border-radius:12px;font-size:1.1rem;font-weight:700;transition:transform .2s,box-shadow .2s}
 .cta a:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(251,191,36,0.25)}
-.redirect{text-align:center;padding:20px;color:#52525b;font-size:.8rem}
+.how-it-works{margin:60px auto;max-width:900px;padding:0 20px}
+.how-it-works h2{color:#fafafa;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.step{background:#27272a;border-radius:14px;padding:24px;text-align:center;border:1px solid rgba(251,191,36,0.1)}
+.step-number{display:inline-block;width:40px;height:40px;background:#fbbf24;color:#18181b;border-radius:50%;line-height:40px;font-weight:700;margin-bottom:16px}
+.step h3{color:#fbbf24;margin-bottom:12px;font-size:1.1rem}
+.step p{color:#a1a1aa;font-size:.95rem}
+.comparison-section{margin:60px auto;max-width:900px;padding:0 20px}
+.comparison-section h2{color:#fafafa;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.comparison-table{width:100%;border-collapse:collapse;background:#27272a;border-radius:12px;overflow:hidden;border:1px solid rgba(251,191,36,0.1)}
+.comparison-table th{background:#fbbf24;color:#18181b;padding:16px;text-align:left;font-weight:600}
+.comparison-table td{padding:16px;border-bottom:1px solid rgba(251,191,36,0.1);color:#a1a1aa}
+.comparison-table tr:nth-child(even){background:rgba(251,191,36,0.02)}
+.comparison-table tr:last-child td{border-bottom:none}
+.comparison-table .highlight{color:#fbbf24;font-weight:600}
+.faq-section{margin:60px auto;max-width:800px;padding:0 20px}
+.faq-section h2{color:#fafafa;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.faq-item{margin-bottom:16px}
+.faq-item details{background:#27272a;border-radius:12px;border:1px solid rgba(251,191,36,0.1);overflow:hidden}
+.faq-item summary{padding:20px;cursor:pointer;color:#fbbf24;font-weight:600;font-size:1.05rem;transition:background .2s}
+.faq-item summary:hover{background:rgba(251,191,36,0.05)}
+.faq-item details[open] summary{background:rgba(251,191,36,0.1);border-bottom:1px solid rgba(251,191,36,0.1)}
+.faq-item .faq-content{padding:20px;color:#a1a1aa;border-top:1px solid rgba(251,191,36,0.1)}
+.related-section{margin:60px auto;max-width:900px;padding:40px 20px;background:#27272a;border-radius:14px;border:1px solid rgba(251,191,36,0.1)}
+.related-section h2{color:#fafafa;margin-bottom:30px;font-size:1.5rem;text-align:center}
+.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:center}
+.related-links a{color:#fbbf24;text-decoration:none;padding:12px;border-radius:8px;transition:background .2s,color .2s}
+.related-links a:hover{background:rgba(251,191,36,0.1);color:#fcd34d}
+@media (max-width: 768px) {
+.comparison-table{font-size:.85rem}
+.comparison-table th,.comparison-table td{padding:10px}
+}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
 </head>
 <body>
 <section class="hero">
@@ -89,20 +121,191 @@ body{font-family:'Sora',sans-serif;background:#18181b;color:#fafafa;min-height:1
 </div>
 </div>
 
+<section class="how-it-works">
+<h2>How AI Assistant Box Delivers Results</h2>
+<div class="steps">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Dedicated AI Processing</h3>
+<p>Unlike cloud AI or shared servers, your AI assistant box dedicates all 67 TOPS to your tasks. Real-time responses with zero latency.</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Local AI Models</h3>
+<p>Pre-installed language models, voice recognition, and computer vision run directly on your AI assistant box. No internet required for core functionality.</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>Multi-Platform Integration</h3>
+<p>Your AI assistant box connects simultaneously to all your messaging platforms. One device, unlimited possibilities.</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Continuous Learning</h3>
+<p>The AI assistant box learns from your usage patterns while keeping all data private. Improved responses over time, zero cloud dependency.</p>
+</div>
+</div>
+</section>
+
+<section class="comparison-section">
+<h2>AI Assistant Box vs Alternatives</h2>
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Solution</th>
+<th class="highlight">ClawBox</th>
+<th>Smart Speakers</th>
+<th>Cloud AI Apps</th>
+<th>DIY Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Privacy</td>
+<td class="highlight">100% Local</td>
+<td>Cloud-dependent</td>
+<td>Data sent externally</td>
+<td>Local (if configured)</td>
+</tr>
+<tr>
+<td>AI Performance</td>
+<td class="highlight">67 TOPS</td>
+<td>Limited</td>
+<td>Variable</td>
+<td>Varies widely</td>
+</tr>
+<tr>
+<td>Setup Complexity</td>
+<td class="highlight">Plug & play</td>
+<td>Voice setup</td>
+<td>App download</td>
+<td>Hours/days</td>
+</tr>
+<tr>
+<td>Monthly Costs</td>
+<td class="highlight">€0</td>
+<td>€0</td>
+<td>€20-200</td>
+<td>€0</td>
+</tr>
+<tr>
+<td>Offline Capability</td>
+<td class="highlight">Full functionality</td>
+<td>Limited</td>
+<td>None</td>
+<td>Depends</td>
+</tr>
+<tr>
+<td>Customization</td>
+<td class="highlight">Open source</td>
+<td>Limited</td>
+<td>None</td>
+<td>Full control</td>
+</tr>
+<tr>
+<td>Professional Use</td>
+<td class="highlight">Business ready</td>
+<td>Consumer only</td>
+<td>API dependent</td>
+<td>Requires expertise</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="faq-section">
+<h2>AI Assistant Box FAQ</h2>
+
+<div class="faq-item">
+<details>
+<summary>What makes an AI assistant box different from smart speakers?</summary>
+<div class="faq-content">
+<p>An AI assistant box like ClawBox processes everything locally with dedicated AI hardware (67 TOPS). Smart speakers send your voice to cloud servers and have limited local processing. The AI assistant box provides superior privacy, performance, and customization options.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How powerful is the NVIDIA AI inside the assistant box?</summary>
+<div class="faq-content">
+<p>The ClawBox uses NVIDIA Jetson Orin Nano with 67 TOPS of AI performance and 1024 CUDA cores. This AI assistant box can run multiple language models simultaneously, process voice in real-time, and handle computer vision tasks — all locally without cloud dependency.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Can I use the AI assistant box for business applications?</summary>
+<div class="faq-content">
+<p>Absolutely! The AI assistant box is perfect for business use: customer service automation, document processing, internal AI assistants, and workflow automation. The one-time €399 cost saves thousands compared to cloud AI subscriptions while keeping sensitive data on-premises.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What happens if my internet goes down?</summary>
+<div class="faq-content">
+<p>Your AI assistant box continues working! Unlike cloud-dependent services, ClawBox processes everything locally. You can still chat with your AI, run automations, and use all core features without internet. Only web browsing requires connectivity.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How do I connect my AI assistant box to different platforms?</summary>
+<div class="faq-content">
+<p>The AI assistant box supports multiple platforms simultaneously. Add your Telegram bot token, WhatsApp Business API credentials, Discord webhook, or use the built-in web interface. One box serves all your messaging needs.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Is the AI assistant box suitable for developers?</summary>
+<div class="faq-content">
+<p>Yes! The AI assistant box runs OpenClaw (184K+ GitHub stars, MIT license). Full source code access, Python APIs, custom model installation, and NVIDIA development tools. Perfect for AI developers who want local hardware without cloud limitations.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How much space does the AI assistant box need?</summary>
+<div class="faq-content">
+<p>The ClawBox AI assistant box is compact (approximately the size of a small router). It needs minimal desk space, runs silently, and requires only power and ethernet connections. Perfect for home offices, server rooms, or business environments.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What AI models come pre-installed on the assistant box?</summary>
+<div class="faq-content">
+<p>The AI assistant box comes with optimized versions of popular models: language models for chat, Whisper for voice recognition, and computer vision models. You can also install additional models from Hugging Face or train custom models on the NVIDIA hardware.</p>
+</div>
+</details>
+</div>
+</section>
+
 <p class="seo-text">The ClawBox is the AI assistant box that makes local AI accessible. Whether you need an OpenClaw box for home automation, an NVIDIA AI box for development, or dedicated AI hardware for business — the ClawBox delivers 67 TOPS in a compact, silent package. AI hardware that belongs to you.</p>
+
+<section class="related-section">
+<h2>Related Resources</h2>
+<div class="related-links">
+<a href="https://local-ai-box.com">Local AI Box Solutions</a>
+<a href="https://plug-and-play-ai.com">Plug & Play AI Options</a>
+<a href="https://dedicated-ai-hardware.com">Dedicated AI Hardware Guide</a>
+<a href="https://openclawhardware.dev/compare">Compare AI Boxes</a>
+<a href="https://openclawhardware.dev/setup-guide">AI Assistant Setup</a>
+<a href="https://openclawhardware.dev/faq">AI Hardware FAQ</a>
+</div>
+</section>
 
 <section class="cta">
 <h2>AI Assistant Box — €399 One-Time</h2>
-<a href="https://openclawhardware.dev/">Get Your AI Assistant Box →</a>
+<a href="https://openclawhardware.dev/" target="_blank">Get ClawBox →</a>
 </section>
-
-
-<div class="related-sites" style="text-align:center;padding:30px 20px;border-top:1px solid rgba(255,107,53,0.15)">
-  <p style="color:#6b7280;font-size:.85rem;margin-bottom:10px">Related Resources:</p>
-  <a href="https://jetson-ai-box.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Jetson AI Box</a>
-  <a href="https://low-power-ai.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Low Power AI</a>
-  <a href="https://clawbox.tech" style="color:#ff6b35;text-decoration:none;margin:0 10px">ClawBox AI Device</a>
-</div>
-<p class="redirect">⏳ Redirecting to openclawhardware.dev...</p>
 </body>
 </html>
